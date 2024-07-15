@@ -45,7 +45,7 @@ Welcome to the ESP8266 WebSocket Earthquake Warning System project! This project
 
 ## Running the Arduino Sketch
 
-1. Install the ESP8266 board manager [(tutorial here)](https://github.com/esp8266/Arduino?tab=readme-ov-file#installing-with-boards-manager).
+1. Install the ESP8266 board manager [(tutorial)](https://github.com/esp8266/Arduino?tab=readme-ov-file#installing-with-boards-manager).
 2. Select the ESP8266 board that you use, in this case it's `LOLIN(WEMOS) D1 R2 & mini`.
 3. Install the required libraries using the Library Manager:
    - `WebSocketsServer.h`
@@ -57,5 +57,3 @@ Welcome to the ESP8266 WebSocket Earthquake Warning System project! This project
 ---
 
 Note: `ESP8266WiFi.h` is included with the ESP8266 board manager.
-
----
