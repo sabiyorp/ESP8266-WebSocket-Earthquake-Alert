@@ -55,7 +55,7 @@ Note: `ESP8266WiFi.h` is included with the ESP8266 board manager.
    pip install websockets
    ```
 3. Download the [Python script](https://github.com/sabiyorp/ESP8266-WebSocket-Earthquake-Alert/blob/main/src/Python%20Script/get_ws_msg.py).
-4. Open the script and replace `<ESP8266_IP_ADDRESS>` with your ESP8266's IP address.
+4. Edit the script using text or code editor and replace `<ESP8266_IP_ADDRESS>` with your ESP8266's IP address.
 5. In Terminal, type `cd` and type the script directory and it would look something like this:
    ```bash
    cd /Change/To/Your/Script/Directory
