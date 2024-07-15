@@ -1,2 +1,2 @@
-# ESP8266-WebSocket-Earthquake-Alert
-Earthquake Warning System using ESP8266
+# ESP8266: Earthquake Warning System using WebSocket and Wi-FI
+
