@@ -45,14 +45,16 @@ Welcome to the ESP8266 WebSocket Earthquake Warning System project! This project
 
 ## Running the Arduino Sketch
 
-1. Install the ESP8266 board manager [(tutorial)](https://github.com/esp8266/Arduino?tab=readme-ov-file#installing-with-boards-manager).
-2. Select the ESP8266 board that you use, in this case it's `LOLIN(WEMOS) D1 R2 & mini`.
-3. Install the required libraries using the Library Manager:
+1. Download the [sketch](https://github.com/sabiyorp/ESP8266-WebSocket-Earthquake-Alert/blob/main/src/WebSocket_EWaS/WebSocket_EWaS.ino).
+2. Open the sketch on the [Arduino IDE](https://www.arduino.cc/en/software/).
+3. Install the ESP8266 board manager [(tutorial)](https://github.com/esp8266/Arduino?tab=readme-ov-file#installing-with-boards-manager).
+4. Select the ESP8266 board that you use, in this case it's `LOLIN(WEMOS) D1 R2 & mini`.
+5. Install the required libraries using the Library Manager:
    - `WebSocketsServer.h`
    - `Adafruit_MPU6050.h`
    - `Adafruit_Sensor.h`
-4. Update the Wi-Fi credentials in the sketch.
-5. Upload the sketch to the ESP8266.
+6. Update the Wi-Fi credentials in the sketch.
+7. Upload the sketch to the ESP8266.
 
 ---
 
