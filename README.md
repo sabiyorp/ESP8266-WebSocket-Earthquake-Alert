@@ -23,11 +23,31 @@
 2. **Process**: The Wemos board processes the data.
 3. **Alert**: If an earthquake is detected, the ESP8266 sends alerts via WebSocket over Wi-Fi.
 
-## Circuit Diagram
+# Circuit Diagram
 
 ![Circuit Diagram](https://github.com/sabiyorp/ESP8266-WebSocket-Earthquake-Alert/blob/main/img/Circuit.jpg)
 
-## Running the Python Script
+# Running the Arduino Sketch
+
+1. Download the [sketch](https://github.com/sabiyorp/ESP8266-WebSocket-Earthquake-Alert/blob/main/src/WebSocket_EWaS/WebSocket_EWaS.ino).
+2. Open the sketch on the [Arduino IDE](https://www.arduino.cc/en/software/).
+3. Install the ESP8266 board manager [(tutorial)](https://github.com/esp8266/Arduino?tab=readme-ov-file#installing-with-boards-manager).
+4. Select the ESP8266 board that you use, in this case it's `LOLIN(WEMOS) D1 R2 & mini`.
+5. Install the required libraries using the Library Manager:
+   - `WebSocketsServer.h`
+   - `Adafruit_MPU6050.h`
+   - `Adafruit_Sensor.h`
+6. Update the Wi-Fi credentials in the sketch.
+7. Upload the sketch to the ESP8266.
+8. Open Serial Monitor to get the ESP8266's IP address.
+
+---
+
+Note: `ESP8266WiFi.h` is included with the ESP8266 board manager.
+
+---
+
+# Running the Python Script
 
 1. Install [Python](https://www.python.org/downloads/).
 2. Open Terminal and install the `websockets` library:
@@ -44,20 +64,3 @@
    ```bash
    python3 get_ws_msg.py
    ```
-
-## Running the Arduino Sketch
-
-1. Download the [sketch](https://github.com/sabiyorp/ESP8266-WebSocket-Earthquake-Alert/blob/main/src/WebSocket_EWaS/WebSocket_EWaS.ino).
-2. Open the sketch on the [Arduino IDE](https://www.arduino.cc/en/software/).
-3. Install the ESP8266 board manager [(tutorial)](https://github.com/esp8266/Arduino?tab=readme-ov-file#installing-with-boards-manager).
-4. Select the ESP8266 board that you use, in this case it's `LOLIN(WEMOS) D1 R2 & mini`.
-5. Install the required libraries using the Library Manager:
-   - `WebSocketsServer.h`
-   - `Adafruit_MPU6050.h`
-   - `Adafruit_Sensor.h`
-6. Update the Wi-Fi credentials in the sketch.
-7. Upload the sketch to the ESP8266.
-
----
-
-Note: `ESP8266WiFi.h` is included with the ESP8266 board manager.
