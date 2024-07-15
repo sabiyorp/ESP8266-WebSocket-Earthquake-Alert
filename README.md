@@ -1,4 +1,4 @@
-![Circuit Diagram](https://github.com/sabiyorp/ESP8266-WebSocket-Earthquake-Alert/blob/main/img/Title.png)
+![Title: Earthquake Warning System](https://github.com/sabiyorp/ESP8266-WebSocket-Earthquake-Alert/blob/main/img/Title.png)
 
 # ESP8266 WebSocket Earthquake Warning System
 
