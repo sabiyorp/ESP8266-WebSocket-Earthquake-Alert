@@ -1,4 +1,4 @@
-# Created by: Sabiyo Riezky Pratama.
+# Created by: Sabiyo Riezky Pratama
 # License: Public Domain (Creative Commons Zero v1.0 Universal)
 
 import asyncio
