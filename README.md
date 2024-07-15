@@ -1,16 +1,16 @@
 # ESP8266 WebSocket Earthquake Warning System
 
-Welcome to the ESP8266 WebSocket Earthquake Warning System project! This project uses an ESP8266 microcontroller and an MPU6050 sensor to detect earthquakes in real-time and send alerts using WebSocket technology.
+Welcome to the ESP8266 WebSocket Earthquake Warning System project! This project uses an Wemos D1 R2 Wi-Fi Based on ESP8266 & ESP-12 microcontroller and an MPU6050 sensor to detect earthquakes and send alert using WebSocket.
 
 ## Features
 
-- **Real-Time Detection**: Detects shaking with the MPU6050 sensor.
-- **WebSocket Alerts**: Sends instant alerts via WebSocket.
+- **Real-Time Detection**: Detect shaking with the MPU6050 sensor.
+- **WebSocket Alerts**: Send instant alert via WebSocket.
 - **Wi-Fi Connectivity**: Using the Wi-Fi local network to sends alerts.
 
 ## Components
 
-- **Wemos D1 R2 Wi-Fi (ESP8266)**
+- **Wemos D1 R2 Wi-Fi (ESP8266 & ESP-12)**
 - **MPU6050 accelerometer and gyroscope**
 - **LED light**
 - **Buzzer**
