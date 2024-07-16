@@ -137,9 +137,14 @@ void loop() {
     numberCounter++;  // Increment the alert counter after all messages are sent
   }
 
-  // Check when numberCounter reached 1000, it will reset the counter
-  if (numberCounter == 1000) {
-    resetCounter();
+  // If numberCounter reached 295, it send message
+  if (numberCounter == 295 {
+    webSocket.broadcastTXT("(RESET) This board will reset in 5 seconds!")
+  }
+
+  // If numberCounter reached 300, it reset the board
+  if (numberCounter == 300 {
+    ESP.reset();
   }
 
   // Read accelerometer data
