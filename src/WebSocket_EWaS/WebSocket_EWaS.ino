@@ -137,13 +137,14 @@ void loop() {
     numberCounter++;  // Increment the alert counter after all messages are sent
   }
 
-  // If numberCounter reached 295, it send message
-  if (numberCounter == 295) {
+  // If numberCounter reached 355, it send message
+  if (numberCounter == 355) {
     webSocket.broadcastTXT("(RESET) This board will reset in 5 seconds!");
+    delay(1000);
   }
 
-  // If numberCounter reached 300, it reset the board
-  if (numberCounter == 300) {
+  // If numberCounter reached 362, it reset the board
+  if (numberCounter == 362) {
     ESP.reset();
   }
 
