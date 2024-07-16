@@ -80,15 +80,21 @@ void setup() {
 
   // Initialize the MPU6050 sensor
   if (!mpu.begin()) {
-    Serial.println("");
+    Serial.println(" ");Serial.println(" ");Serial.println(" ");Serial.println(" ");
+    Serial.println(" ");Serial.println(" ");Serial.println(" ");Serial.println(" ");
+    Serial.println("---------------------------------------------------------");
     Serial.println("MPU6050 initialization failed!");
-    Serial.println("Try:");
-    Serial.println("1. Press the RESET button");
-    Serial.println("2. UNPLUG then PLUG BACK the cable from the USB port");
+    Serial.println("---------------------------------------------------------");
+    Serial.println("Solution:");
+    Serial.println("1. Try UNPLUG then PLUG BACK the cable from the USB port.");
+    Serial.println("2. Try PRESS the RESET button.");
+    Serial.println("3. If it doesn't work, check the MPU6050 connection");
+    Serial.println("   and change the USB port.");
+    Serial.println("---------------------------------------------------------");
     while (1)
       ;  // Hang indefinitely if sensor initialization fails
   }
-
+  
   // Set the accelerometer range to +/- 2G
   mpu.setAccelerometerRange(MPU6050_RANGE_2_G);
 
@@ -131,7 +137,7 @@ void loop() {
     numberCounter++;  // Increment the alert counter after all messages are sent
   }
 
-  // Check when numberCounter reached 20, it will reset the counter
+  // Check when numberCounter reached 1000, it will reset the counter
   if (numberCounter == 1000) {
     resetCounter();
   }
@@ -143,9 +149,9 @@ void loop() {
   // Calculate magnitude of acceleration vector
   float magnitude = sqrt(accel.acceleration.x * accel.acceleration.x + accel.acceleration.y * accel.acceleration.y + accel.acceleration.z * accel.acceleration.z);
 
-  // Check for shaking (magnitude exceeds threshold)
-  if (magnitude > 1 * SENSORS_GRAVITY_EARTH) {
-    triggerAlarm(200);  // Trigger alarm for 200 iterations
+  // Check for shaking
+  if (magnitude > 2 * SENSORS_GRAVITY_EARTH) {
+    triggerAlarm(50);   // Trigger alarm for 200 iterations
     resetCounter();     // Reset numberCounter to 1
   }
 }
