@@ -40,7 +40,7 @@ const char* password = "CHANGE TO YOUR WI-FI NETWORK PASSWORD";
 // Network settings
 IPAddress local_IP(192, 168, 1, 184); // Static IP address
 IPAddress gateway(192, 168, 1, 1);    // Gateway IP address
-IPAddress subnet(255, 255, 0, 0);     // Subnet IP address
+IPAddress subnet(255, 255, 255, 0);     // Subnet IP address
 
 // Set the preferred Domain Name System (DNS)
 IPAddress primaryDNS(8, 8, 8, 8);   // Primary
@@ -129,6 +129,11 @@ void loop() {
     webSocket.broadcastTXT(wsMessage);  // Send WebSocket message
     // Serial.println(wsMessage); // Uncomment for debugging
     numberCounter++;  // Increment the alert counter after all messages are sent
+  }
+
+  // Check when numberCounter reached 20, it will reset the counter
+  if (numberCounter == 999) {
+    resetCounter();
   }
 
   // Read accelerometer data
