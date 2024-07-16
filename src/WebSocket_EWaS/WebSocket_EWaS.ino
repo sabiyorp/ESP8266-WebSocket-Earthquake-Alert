@@ -32,8 +32,8 @@
 #include <Adafruit_Sensor.h>
 
 // Wi-Fi credentials
-const char* ssid = "Wi-Fi D11/9";
-const char* password = "_Delta11NovemberOscar9_";
+const char* ssid = "CHANGE TO YOUR WI-FI NETWORK NAME";
+const char* password = "CHANGE TO YOUR WI-FI NETWORK PASSWORD";
 
 /* <-- Uncomment this, and uncomment on line 94 to use
 
