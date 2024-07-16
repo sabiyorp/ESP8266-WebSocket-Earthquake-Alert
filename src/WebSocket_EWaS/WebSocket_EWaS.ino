@@ -132,7 +132,7 @@ void loop() {
   }
 
   // Check when numberCounter reached 20, it will reset the counter
-  if (numberCounter == 999) {
+  if (numberCounter == 1000) {
     resetCounter();
   }
 
