@@ -2,13 +2,13 @@
 
 # ESP8266 WebSocket Earthquake Warning System
 
-**Welcome to the ESP8266 WebSocket Earthquake Warning System project!** This project uses an **Wemos D1 R2 Wi-Fi Based on ESP8266 & ESP-12 microcontroller** and an **MPU6050 sensor** to detect earthquake and **send alert using WebSocket**.
+**Welcome to the ESP8266 WebSocket Earthquake Warning System project!** This project uses a **Wemos D1 R2 Wi-Fi Based on ESP8266 & ESP-12 microcontroller** and an **MPU6050 sensor** to detect earthquakes and **send alerts using WebSocket**.
 
 ## Features
 
 - **Real-Time Detection**: Detect shaking with the MPU6050 sensor.
-- **Earthquake Alert**: Send alert instantly via WebSocket.
-- **Wi-Fi Connectivity**: Using the Wi-Fi local network to sends alert.
+- **Earthquake Alert**: Send alerts instantly via WebSocket.
+- **Wi-Fi Connectivity**: Use the Wi-Fi local network to send alerts.
 
 ## Components
 
@@ -38,7 +38,7 @@
 1. Download the [sketch](https://github.com/sabiyorp/ESP8266-WebSocket-Earthquake-Alert/blob/main/src/WebSocket_EWaS/WebSocket_EWaS.ino).
 2. Open the sketch on the [Arduino IDE](https://www.arduino.cc/en/software/).
 3. Install the ESP8266 board manager [(tutorial)](https://github.com/esp8266/Arduino?tab=readme-ov-file#installing-with-boards-manager).
-4. Select the ESP8266 board that you use, in this case it's `LOLIN(WEMOS) D1 R2 & mini`.
+4. Select the ESP8266 board that you use; in this case, it's `LOLIN(WEMOS) D1 R2 & mini`.
 5. Install the required libraries using the Library Manager:
    - `WebSocketsServer.h`
    - `Adafruit_MPU6050.h`
@@ -61,8 +61,8 @@ Note: `ESP8266WiFi.h` is included with the ESP8266 board manager.
    pip install websockets
    ```
 3. Download the [Python script](https://github.com/sabiyorp/ESP8266-WebSocket-Earthquake-Alert/blob/main/src/Python%20Script/get_ws_msg.py).
-4. Edit the script using text or code editor and replace `<ESP8266_IP_ADDRESS>` with your ESP8266's IP address.
-5. In Terminal, type `cd` and type the script directory and it would look something like this:
+4. Edit the script using a text or code editor and replace `<ESP8266_IP_ADDRESS>` with your ESP8266's IP address.
+5. In Terminal, type `cd` and navigate to the script directory. It should look something like this:
    ```bash
    cd /Change/To/Your/Script/Directory
    ```
