@@ -30,7 +30,7 @@
 # Demo
 <p align="center">
   <img src="https://github.com/sabiyorp/ESP8266-WebSocket-Earthquake-Alert/blob/main/img/ESP8266%20Demo.gif"/>
-  <img src="https://github.com/sabiyorp/ESP8266-WebSocket-Earthquake-Alert/blob/main/img/WebSocket%20Demo.gif" width="500" height="300"/>
+  <img src="https://github.com/sabiyorp/ESP8266-WebSocket-Earthquake-Alert/blob/main/img/WebSocket%20Demo.gif" width="400" height="300"/>
 </p>
 
 # Running the Arduino Sketch
