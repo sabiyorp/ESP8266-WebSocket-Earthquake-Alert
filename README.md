@@ -2,13 +2,13 @@
 
 # ESP8266 WebSocket Earthquake Warning System
 
-**Welcome to the ESP8266 WebSocket Earthquake Warning System project!** This project uses an **Wemos D1 R2 Wi-Fi Based on ESP8266 & ESP-12 microcontroller** and an **MPU6050 sensor** to detect earthquakes and **send alert using WebSocket**.
+**Welcome to the ESP8266 WebSocket Earthquake Warning System project!** This project uses an **Wemos D1 R2 Wi-Fi Based on ESP8266 & ESP-12 microcontroller** and an **MPU6050 sensor** to detect earthquake and **send alert using WebSocket**.
 
 ## Features
 
 - **Real-Time Detection**: Detect shaking with the MPU6050 sensor.
-- **WebSocket Alerts**: Send instant alert via WebSocket.
-- **Wi-Fi Connectivity**: Using the Wi-Fi local network to sends alerts.
+- **Earthquake Alert**: Send alert instantly via WebSocket.
+- **Wi-Fi Connectivity**: Using the Wi-Fi local network to sends alert.
 
 ## Components
 
@@ -39,7 +39,7 @@
    - `Adafruit_Sensor.h`
 6. Update the Wi-Fi credentials in the sketch.
 7. Upload the sketch to the ESP8266.
-8. Open Serial Monitor to get the ESP8266's IP address.
+8. Open Serial Monitor and change the baud rate to 115200 to get the ESP8266's IP address.
 
 ---
 
