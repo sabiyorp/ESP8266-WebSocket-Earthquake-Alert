@@ -16,17 +16,17 @@ async def receive_message():
             async with websockets.connect(uri) as websocket:
                 while True:
                     try:
-                        message = await asyncio.wait_for(websocket.recv(), timeout=2.0)
+                        message = await asyncio.wait_for(websocket.recv(), timeout=3.0)
                         print(f"Received message: {message}")
                     except asyncio.TimeoutError:
                         print("Reconnecting...")
                         break
         except (websockets.exceptions.ConnectionClosedError, websockets.exceptions.InvalidURI) as e:
             print(f"Connection error: {e}. Reconnecting...")
-            await asyncio.sleep(2)  # Wait before retrying the connection
+            await asyncio.sleep(5)  # Wait before retrying the connection
         except Exception as e:
             print(f"An unexpected error occurred: {e}. Reconnecting...")
-            await asyncio.sleep(2)  # Wait before retrying the connection
+            await asyncio.sleep(5)  # Wait before retrying the connection
 
 if __name__ == "__main__":
     asyncio.run(receive_message())
