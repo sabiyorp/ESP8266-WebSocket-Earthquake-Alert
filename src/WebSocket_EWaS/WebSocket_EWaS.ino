@@ -72,6 +72,9 @@ void setup() {
   // Initialize serial communication for debugging
   Serial.begin(115200);
 
+  //Set Wi-Fi mode
+  WiFi.mode(WIFI_STA);
+
   // Set the hostname for the ESP8266
   WiFi.hostname(newHostname.c_str());
 
