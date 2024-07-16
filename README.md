@@ -27,6 +27,12 @@
 
 ![Circuit Diagram](https://github.com/sabiyorp/ESP8266-WebSocket-Earthquake-Alert/blob/main/img/Circuit.jpg)
 
+# Demo
+<p align="center">
+  <img src="https://github.com/sabiyorp/ESP8266-WebSocket-Earthquake-Alert/blob/main/img/ESP8266%20Demo.gif"/>
+  <img src="https://github.com/sabiyorp/ESP8266-WebSocket-Earthquake-Alert/blob/main/img/WebSocket%20Demo.gif" width="500" height="300"/>
+</p>
+
 # Running the Arduino Sketch
 
 1. Download the [sketch](https://github.com/sabiyorp/ESP8266-WebSocket-Earthquake-Alert/blob/main/src/WebSocket_EWaS/WebSocket_EWaS.ino).
