@@ -10,7 +10,7 @@ import asyncio
 import websockets
 
 async def receive_message():
-    uri = "ws://192.168.XXX.XXX"  # Replace with the actual IP address of your ESP8266
+    uri = "<ESP8266_IP_ADDRESS>"  # Replace <ESP8266_IP_ADDRESS> with the actual IP address of your ESP8266
     while True:
         try:
             async with websockets.connect(uri) as websocket:
