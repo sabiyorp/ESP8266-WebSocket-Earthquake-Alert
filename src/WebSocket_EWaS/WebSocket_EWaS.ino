@@ -35,7 +35,7 @@
 const char* ssid = "CHANGE TO YOUR WI-FI NETWORK NAME";
 const char* password = "CHANGE TO YOUR WI-FI NETWORK PASSWORD";
 
-/* <-- Uncomment this, and uncomment on line 94 to use
+/* <-- Uncomment this, and uncomment on line 103 to use
 
 // Network settings
 IPAddress local_IP(192, 168, 1, 184); // Static IP address
